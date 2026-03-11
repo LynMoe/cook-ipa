@@ -1,7 +1,7 @@
 services:
   ipa-signer:
     # To build locally instead: comment out 'image' and uncomment 'build'
-    image: ghcr.io/LynMoe/cook-ipa:latest
+    image: ghcr.io/lynmoe/cook-ipa:latest
     # build: .
     container_name: cook-ipa
     stop_grace_period: 3s
