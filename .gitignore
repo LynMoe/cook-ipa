@@ -1,0 +1,54 @@
+# ─── Credentials & environment ────────────────────────────────
+# Contains real secrets — NEVER commit
+.env
+.env.*
+!.env.example
+
+# Certificates and private keys
+certs/*
+!certs/.gitkeep
+
+# ─── Runtime data ─────────────────────────────────────────────
+builds/
+logs/
+/tmp/cook-ipa-profiles/
+
+# ─── Python ───────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.cover
+.coverage
+htmlcov/
+
+# ─── Frontend ─────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+app/static/spa/
+
+# ─── IDE / editor ─────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── OS ───────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
